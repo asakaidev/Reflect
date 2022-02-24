@@ -12,10 +12,8 @@
 1. Dowload the repo
 2. Open up the folder and click on install.bat
 3. after it has downloaded all the dependencies click on start.bat (Or open the folder in the command prompt and do node Main.js)
-4. Enter the neccisary info for it to clone (The account token , The server to be cloned's ID and the target server's ID) 
+4. Enter the necessary info for it to clone (The account token , The server to be cloned's ID and the target server's ID) 
 5. Now just press enter and get a exact clone of the server!
-
-**WARNING - NEVER SHARE YOUR ACCOUNT'S TOKEN WITH ANYONE**
 
 
 
