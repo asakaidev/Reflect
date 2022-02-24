@@ -4,7 +4,7 @@
 
 # Requirements -
 - Node.JS (preferably the latest ver)
-- A PC or Laptop (I'll link a replit link later)
+- A PC or Laptop (I'll make a repl later)
 - Your discord account and its Token ( [Click here if you do not know how to get one.](https://www.youtube.com/watch?v=YEgFvgg7ZPI))
 
 # Installation
