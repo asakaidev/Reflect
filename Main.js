@@ -1,7 +1,7 @@
 /**
- * I still suck at programming
+ * Yes I suck at programming how do you know?
  *
- * Mirror the Cloner
+ * 
  *
  */
 
@@ -51,14 +51,14 @@ async function run() {
             category: guilds[0].channels.filter(c => c.type === 'category').sort((a, b) => a.calculatedPosition - b.calculatedPosition).map(c => c),
             roles: guilds[0].roles.sort((a, b) => b.calculatedPosition - a.calculatedPosition).map(r => r)
         }
-        process.title = `@Sakugawa | Mirror [Cloning ${guilds[0].name}]`;
+        process.title = `@Sakuta | Mirror [Cloning ${guilds[0].name}]`;
 
         log('Deleting all channels and roles of target guild...', 1)
         await guilds[1].channels.forEach(c => c.delete().catch(() => {}))
         await guilds[1].roles.map(r => r.delete().catch((() => {})))
 
         await guilds[1].setIcon(guilds[0].iconURL)
-        await guilds[1].setName(`${guilds[0].name} Sakugawa's clone`)
+        await guilds[1].setName(`${guilds[0].name} Sakuta's clone`)
 
         for (let role of itens.roles) {
             if (guilds[1].roles.get(role.id)) continue;
@@ -224,14 +224,14 @@ async function logAscii() {
 
 
                 888b     d888 d8b
-                8888b   d8888 Y8P   Pls help I'm suffering
+                8888b   d8888 Y8P   Yes I suck at programming
                 88888b.d88888
                 888Y88888P888 888 888d888 888d888 .d88b.  888d8888
                 888 Y888P 888 888 888P"   888P"  d88""88b 888P8"
                 888   "   888 888 888     888    Y88..88P 888
                 888       888 888 888     888     "Y88P"  888
-        The ultimate but outdated discord cloner | This still works like a charm
-`.brightMagenta)
+        The ultimate outdated discord server cloner | This still works somehow
+`.brightRed)
 }
 
 async function log(message, type) {
