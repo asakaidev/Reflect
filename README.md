@@ -3,9 +3,10 @@
 ***An Outdated discord server cloner made with Node.JS and Discord selfbot V11*** 
 
 # Requirements -
-Node.JS (preferably the latest ver)
-A PC or Laptop (I'll link a replit link later)
-Your discord account and its Token ( [Click here if you do not know how to get one.](https://www.youtube.com/watch?v=YEgFvgg7ZPI))
+- Node.JS (preferably the latest ver)
+- A PC or Laptop (I'll link a replit link later)
+- Your discord account and its Token ( [Click here if you do not know how to get one.](https://www.youtube.com/watch?v=YEgFvgg7ZPI))
+
 # Installation
 
 1. Dowload the repo
@@ -25,6 +26,6 @@ Your discord account and its Token ( [Click here if you do not know how to get o
  - Also clones the emojis
 
 #
-**Sasuga sakuta azusagawa-san wa puroguramingu ga nigatedesu**
+**Sasuga Sakuta Azusagawa-san wa puroguramingu ga nigatedesu**
 # 
-*Yes I speak japanese too (I suck at it)*
+*Yes I speak japanese (I suck at it)*
