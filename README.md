@@ -1,29 +1,38 @@
 # Mirror
 
-***An Outdated discord server cloner made with Node.JS and Discord selfbot V11*** 
+***An Discord server cloner made with Node.JS and Discord.js V11 (not rly its a patched version of it)*** 
 
 # Requirements -
-- Node.JS (preferably the latest ver)
-- A PC or Laptop (I'll make a repl later)
+- Node.JS (preferably the latest version)
+- A PC or Laptop ([The replit Version is out now!](Replit.com))
 - Your discord account and its Token ( [Click here if you do not know how to get one.](https://www.youtube.com/watch?v=YEgFvgg7ZPI))
 
 # Installation
 
 1. Dowload the repo
-2. Open up the folder and click on install.bat
+2. Open up the folder and click on the .bat files according to the numbers
 3. after it has downloaded all the dependencies click on start.bat (Or open the folder in the command prompt and do node Main.js)
 4. Enter the necessary info for it to clone (The account token , The server to be cloned's ID and the target server's ID) 
 5. Now just press enter and get a exact clone of the server!
 
+# Replit version
+Much easier to use 
 
+1. Go to the repl
+2. Fork it
+3. Run it
+4. Enter details
+5. press enter
+6. now you have your clone!
 
 
 # Features -
 
- - Clones all the channels and roles exactley as they were in the server you wanted to clone
- - Also clones the emojis
+ - Clones every channel Incl. VCs (With the topics!)
+ - Clones emojis
+ - no this cannot clone stickers this is made with v11 what do u expect?
 
-#
-**Sasuga Sakuta Azusagawa-san wa puroguramingu ga nigatedesu**
-# 
-*Yes I speak japanese (I suck at it)*
+
+**Sasuga Sakuta wa puroguramingu ga nigatedesu**
+
+###### pls someone make this thing better
