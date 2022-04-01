@@ -1,27 +1,29 @@
 /**
- * Yes I suck at programming how do you know?
- *
- * 
- *
+ * V1.2 Replit port out now but still it has issues
  */
 
-const { Client } = require('discord.js-selfbot-v11'),
+const { Client } = require('v11-discord.js'),
     client = new Client();
 
 const { prompt } = require('enquirer')
-var colors = require('node-colors-sync')
+var colors = require('@libertyio/colors-node-js')
+
+colors.setTheme({
+  error: 'red',
+  ASCII: 'brightMagenta'
+});
 
 //const delay = async(ms) => new Promise(resolve => setTimeout(resolve, ms))
-
+// no this thing does not save ur token
 async function run() {
 
     await logAscii()
-    process.title = '@Sakugawa | Mirror [Config]'
+    process.title = '@Reflect | Saku [Configuration]'
 
     const config = await prompt([{
             type: 'input',
             name: 'token',
-            message: 'Insert your account token'
+            message: 'Insert your account`s token'
         }, {
             type: 'input',
             name: 'original',
@@ -40,25 +42,25 @@ async function run() {
         const guilds = [await client.guilds.get(original), await client.guilds.get(target)]
         guilds.forEach(g => {
             if (!g) {
-                log('Unknown server, verify the ID! (Its wrong or any server like that does not exist)', 3)
+                log('Unknown server, verify the ID (Wrong ID or a server with such ID does not exist)', 3)
                 process.exit(1)
             }
         })
-
+// well yeah frick 
         let itens = {
             text: guilds[0].channels.filter(c => c.type === 'text').sort((a, b) => a.calculatedPosition - b.calculatedPosition).map(c => c),
             voice: guilds[0].channels.filter(c => c.type === 'voice').sort((a, b) => a.calculatedPosition - b.calculatedPosition).map(c => c),
             category: guilds[0].channels.filter(c => c.type === 'category').sort((a, b) => a.calculatedPosition - b.calculatedPosition).map(c => c),
             roles: guilds[0].roles.sort((a, b) => b.calculatedPosition - a.calculatedPosition).map(r => r)
         }
-        process.title = `@Sakuta | Mirror [Cloning ${guilds[0].name}]`;
+        process.title = `@Reflect | Saku [Cloning ${guilds[0].name}]`;
 
         log('Deleting all channels and roles of target guild...', 1)
         await guilds[1].channels.forEach(c => c.delete().catch(() => {}))
         await guilds[1].roles.map(r => r.delete().catch((() => {})))
 
         await guilds[1].setIcon(guilds[0].iconURL)
-        await guilds[1].setName(`${guilds[0].name} Sakuta's clone`)
+        await guilds[1].setName(`${guilds[0].name} By saku`)
 
         for (let role of itens.roles) {
             if (guilds[1].roles.get(role.id)) continue;
@@ -213,7 +215,7 @@ async function run() {
     client.login(`${token}`.replace(/"/g, ''))
         .catch(() => {
             logAscii()
-            log('Ops! Something is wrong, verify the token!', 3)
+            log('Whoops! Something is wrong, verify the token!' .error, 3)
         })
 }
 
@@ -221,23 +223,25 @@ async function logAscii() {
     console.clear()
     console.log(`
 
+                        Yesn't
 
-
-                888b     d888 d8b
-                8888b   d8888 Y8P   Yes I suck at programming
-                88888b.d88888
-                888Y88888P888 888 888d888 888d888 .d88b.  888d8888
-                888 Y888P 888 888 888P"   888P"  d88""88b 888P8"
-                888   "   888 888 888     888    Y88..88P 888
-                888       888 888 888     888     "Y88P"  888
-        The ultimate outdated discord server cloner | This still works somehow
-`.brightRed)
+8888888b.           .d888 888                   888    
+888   Y88b         d88P"  888                   888    
+888    888         888    888                   888    
+888   d88P .d88b.  888888 888  .d88b.   .d8888b 888888 
+8888888P" d8P  Y8b 888    888 d8P  Y8b d88P"    888    
+888 T88b  88888888 888    888 88888888 888      888    
+888  T88b Y8b.     888    888 Y8b.     Y88b.    Y88b.  
+888   T88b "Y8888  888    888  "Y8888   "Y8888P  "Y888 
+        
+A discord server cloner made with outdated stuff | Mai san = ❤
+`.ASCII)
 }
 
 async function log(message, type) {
     switch (type) {
         case 1:
-            await console.log(` [\u2713] ${message}`.brightGreen)
+            await console.log(` [\u2713] ${message}`.green)
             break;
         case 2:
             await console.log(` [\u26A0] ${message}`.yellow)
@@ -247,5 +251,4 @@ async function log(message, type) {
             break;
     }
 }
-
 run()
