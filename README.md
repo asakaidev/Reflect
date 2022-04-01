@@ -1,4 +1,4 @@
-![Fuck it Ship it](https://img.shields.io/badge/Fuck%20it-Ship%20it-blueviolet)
+![Made with suffering](https://img.shields.io/badge/made%20with-suffering-brightgreen)
 # Reflect
 
 ***An Discord server cloner made with Node.JS and Discord.js V11*** 
