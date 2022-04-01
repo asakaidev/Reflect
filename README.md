@@ -1,10 +1,11 @@
-# Mirror
+![Fuck it Ship it](https://img.shields.io/badge/Fuck%20it-Ship%20it-blueviolet)
+# Reflect
 
-***An Discord server cloner made with Node.JS and Discord.js V11 (not rly its a patched version of it)*** 
+***An Discord server cloner made with Node.JS and Discord.js V11*** 
 
 # Requirements -
 - Node.JS (preferably the latest version)
-- A PC or Laptop ([The replit Version is out now!](Replit.com))
+- A PC or Laptop ([The replit Version is not out](http://shorturl.at/ioNRU))
 - Your discord account and its Token ( [Click here if you do not know how to get one.](https://www.youtube.com/watch?v=YEgFvgg7ZPI))
 
 # Installation
@@ -16,7 +17,7 @@
 5. Now just press enter and get a exact clone of the server!
 
 # Replit version
-Much easier to use 
+Much easier to use but still in progress
 
 1. Go to the repl
 2. Fork it
@@ -32,7 +33,6 @@ Much easier to use
  - Clones emojis
  - no this cannot clone stickers this is made with v11 what do u expect?
 
-
-**Sasuga Sakuta wa puroguramingu ga nigatedesu**
+###### Sasuga Sakuta wa puroguramingu ga nigatedesu
 
 ###### pls someone make this thing better
