@@ -1,4 +1,4 @@
-![Made with Node.JS](https://img.shields.io/badge/made%20with-Node.JS-brightgreen)
+![Node.JS](https://badges.aleen42.com/src/node.svg) ![npm](https://badges.aleen42.com/src/npm.svg)
 # Reflect
 
   
