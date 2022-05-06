@@ -33,11 +33,9 @@
 
   
 
-# Replit version (or how do use it on a phone)
+# Replit version (or how to use it on a phone)
 
-Much easier to use -
-
-  
+ 
 
 1. Go to the repl
 
@@ -64,7 +62,7 @@ Much easier to use -
 
 - Does not steal your token or save it locally 
 
-- no this cannot clone stickers this is made with v11 what do u expect?
+- No this cannot clone stickers this is made with v11 what do u expect?
 
   
 
