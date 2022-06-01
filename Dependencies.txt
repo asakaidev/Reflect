@@ -1,0 +1,5 @@
+v11-discord.js
+@libertyio/colors-node-js
+enquirer 
+chalk@4.1.2 
+chalk-gradient

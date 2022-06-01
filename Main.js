@@ -1,6 +1,7 @@
 /**
- * V1.2 Replit port out now but still it has issues
+ * V1.3 Finished Repl.it port and UI improvements (Which means adding a gradient lol)
  */
+const chalk = require("chalk")
 
 const { Client } = require('v11-discord.js'),
     client = new Client();
@@ -12,13 +13,14 @@ colors.setTheme({
   error: 'red',
   ASCII: 'brightMagenta'
 });
+const gradient = require('gradient-string');
 
 //const delay = async(ms) => new Promise(resolve => setTimeout(resolve, ms))
-// no this thing does not save ur token
+// no this thing does not save ur token litreally open source
 async function run() {
 
     await logAscii()
-    process.title = '@Reflect | Saku [Configuration]'
+    process.title = '@Reflect | Sakuu [Configuration]'
 
     const config = await prompt([{
             type: 'input',
@@ -221,9 +223,9 @@ async function run() {
 
 async function logAscii() {
     console.clear()
-    console.log(`
+    console.log(gradient.mind(`
 
-                        Yesn't
+                Imagine a server 
 
 8888888b.           .d888 888                   888    
 888   Y88b         d88P"  888                   888    
@@ -234,8 +236,8 @@ async function logAscii() {
 888  T88b Y8b.     888    888 Y8b.     Y88b.    Y88b.  
 888   T88b "Y8888  888    888  "Y8888   "Y8888P  "Y888 
         
-A discord server cloner made with outdated stuff | Mai san = ❤
-`.ASCII)
+A discord server cloner made with outdated stuff | Made with Node.JS & v11-discord.js
+`))
 }
 
 async function log(message, type) {
