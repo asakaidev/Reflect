@@ -23,9 +23,9 @@
 
 1. Download the repo and extract it wherever you want
 
- 2. Open up the folder and run the batch files for the dependencies if on windows. else use npm install
+ 2. Open the folder and install the dependencies or just cd (change directory) in the folder and run "npm i"
 
-3. After it has downloaded all the dependencies click on start.bat (Or open the folder in the command prompt and do node Main.js)
+3. After it has downloaded all the dependencies click on start.bat or cd in folder in the command prompt and do "node Main.js"
 
 4. Enter the necessary info for it to clone (Your account's token , The server to be cloned's ID and the target server's ID)
 

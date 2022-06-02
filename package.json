@@ -1,7 +1,20 @@
 {
+  "name": "reflect",
+  "version": "1.0.0",
+  "description": "A discord server clonr",
+  "main": "Main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Sakuu",
+  "license": "ISC",
   "dependencies": {
-    "discord.js-selfbot-v11": "^11.5.1",
+    "@libertyio/colors-node-js": "^1.4.0",
+    "chalk": "^4.1.2",
+    "chalk-animation": "^2.0.2",
     "enquirer": "^2.3.6",
-    "node-colors-sync": "^1.4.1"
+    "gradient-string": "^2.0.1",
+    "v11-discord.js": "^11.5.8"
   }
 }
